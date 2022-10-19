@@ -2,7 +2,8 @@ import {DISABLED, STANDARD} from "../constants/reduction.constants.js";
 import {calculateTax} from "./tax.utils.js";
 
 function calculateSubtotal(prices, qty) {
-    // non equal lists
+    // TODO: handle non-equal list
+
     let subtotal = 0;
 
     for (let i = prices.length; i--; i) {

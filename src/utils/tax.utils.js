@@ -1,7 +1,7 @@
 import {TAX} from "../constants/tax.constants.js";
 
 function calculateTax(price, country) {
-    // if wrong country
+    // TODO: handle invalid country
 
     return parseFloat((price / 100 * TAX[country]).toFixed(2));
 }
