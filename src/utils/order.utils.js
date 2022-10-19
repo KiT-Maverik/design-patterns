@@ -9,7 +9,7 @@ function calculateSubtotal(prices, qty) {
         subtotal += prices[i] * qty[i];
     }
 
-    return subtotal;
+    return parseFloat(subtotal.toFixed(2));
 }
 
 function getReductionScheme(scheme) {
@@ -26,7 +26,7 @@ function calculateDiscount(price, scheme) {
         return acc
     }, 0);
 
-    const amount = rate / price * 100;
+    const amount = parseFloat((price / 100 * rate).toFixed(2));
 
     return {
         rate,
@@ -43,7 +43,7 @@ function calculateTotal({country, prices, quantities, reduction}) {
         discount,
         subtotal,
         tax,
-        total: subtotal + tax - discount.amount,
+        total: parseFloat((subtotal + tax - discount.amount).toFixed(2)),
     };
 }
 
