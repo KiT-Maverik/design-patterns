@@ -1,6 +1,9 @@
 import {TAX} from "../constants/tax.constants.js";
 
-function applyTax(price, country) {
+function calculateTax(price, country) {
     // if wrong country
-    return (price * (1 + TAX[country] / 100)).toFixed(2)
+
+    return (price / 100 * TAX[country]).toFixed(2)
 }
+
+export {calculateTax};
