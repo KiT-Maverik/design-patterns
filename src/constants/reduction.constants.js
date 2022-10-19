@@ -1,0 +1,5 @@
+const STANDARD = {
+
+};
+
+export {STANDARD};
