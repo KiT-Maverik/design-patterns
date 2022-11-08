@@ -49,6 +49,7 @@ class MercedesCorp {
 
 // ==============================================
 
+// Abstract factory
 interface IFurnitureFactory {
     createChair: () => {label: string};
     createSofa: () => {label: string};
