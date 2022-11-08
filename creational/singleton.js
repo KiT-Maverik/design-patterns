@@ -16,6 +16,7 @@ class Counter {
     }
 }
 
+
 const counter1 = new Counter();
 const counter2 = new Counter();
 
