@@ -1,9 +1,22 @@
-Factory creates similar objects using data provided.
+Factory creates objects of the same structure, but with different implementation.
 
-When to use?
-When you need to create lots of objects of the same structure, but different values.
+### When to use?
+When you need to create lots of objects of the same structure, but with different values.
+The most common use case is simplifying complex constructors.
 
-the most common use simplify complex constructor
+### Production line
+Production line may produce one or more classes.
+All objects produced by factory must share the same interface.
+
+### PROS & CONS
+* Pros
+    * Guarantees abstraction
+    * Code is flexible and adaptable
+    * Useful for frameworks and libraries
+* Cons
+    * Complex code
+    * Takes time to set the base
+    * Not a pattern that can be refactored into
 
 ```js
 class Character {
