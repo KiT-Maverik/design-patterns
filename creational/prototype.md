@@ -1,13 +1,13 @@
 Allows to copy object without diving deep into their realisation
 
-diff from factory
+### Diff from factory
     you have basic class implementation
     you clone objects using it
     you can change clones for particular tasks
 
-example
-    BMW should use factory. limited models, mass production
-    Rolls-royce should use prototype. custom cars, infinite interior and exterior combinations
+### example
+* BMW should use factory (limited models, mass production). 
+* Rolls-royce should use prototype (custom cars, infinite interior and exterior combinations).
 
 ```js
 // Basic model
