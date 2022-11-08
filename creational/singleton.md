@@ -25,6 +25,7 @@ class FancyClass {
 
 // Therefore, every single object created via FancyClass constructor will be singleton.
 ```
+
 ### PROS & CONS
 * Pros
   * Neat way to handle access to shared resources
