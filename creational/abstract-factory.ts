@@ -1,32 +1,32 @@
-type TSerialModels = 'pew' | 'meow' | 'lol';
+type TSerialModels = 'EQE' | 'Maybach' | 'E class';
 class SerialCarsFactory {
     static produce(model: TSerialModels) {
         switch (model) {
-            case 'pew': return {description: 'legendary truck'};
-            case 'meow': return {description: 'legendary truck'};
-            case 'lol': return {description: 'legendary truck'};
+            case 'E class': return {description: 'Modest sedan'};
+            case 'EQE': return {description: 'Electric sedan'};
+            case 'Maybach': return {description: 'Luxury car'};
         }
     }
 }
 
-type TRacingModels = 'pew' | 'meow' | 'lol';
+type TRacingModels = 'Silver Arrow' | 'C9' | 'AMG';
 class RacingCarsFactory {
     static produce(model: TRacingModels) {
         switch (model) {
-            case 'pew': return {description: 'legendary truck'};
-            case 'meow': return {description: 'legendary truck'};
-            case 'lol': return {description: 'legendary truck'};
+            case 'AMG': return {description: 'GT2 class racing car'};
+            case 'C9': return {description: 'Le Mans 1989 winner'};
+            case 'Silver Arrow': return {description: 'Legendary classic racing bolid'};
         }
     }
 }
 
-type TTruckModels = 'pew' | 'meow' | 'lol';
+type TTruckModels = 'Unimog' | 'Arocs' | 'Atego';
 class TrucksFactory {
     static produce(model: TTruckModels) {
         switch (model) {
-            case 'pew': return {description: 'legendary truck'};
-            case 'meow': return {description: 'legendary truck'};
-            case 'lol': return {description: 'legendary truck'};
+            case 'Arocs': return {description: 'Long range heavy cargo transporter'};
+            case 'Atego': return {description: 'Mid-weight truck'};
+            case 'Unimog': return {description: 'Universal modular platform'};
         }
     }
 }
@@ -44,7 +44,6 @@ class MercedesCorp {
     }
 }
 
-// TODO: get corresponding models and its description
 // TODO: Verify if implementation is a valid pattern
 
 // ==============================================
