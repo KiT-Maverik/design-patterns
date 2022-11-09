@@ -6,7 +6,7 @@ The most common use case is simplifying complex constructors.
 
 ### Production line
 Production line may produce one or more classes.
-All objects produced by factory must share the same interface.
+> Note: All objects produced by factory must share the same interface.
 
 ### PROS & CONS
 * Pros
