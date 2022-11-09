@@ -27,26 +27,31 @@ class CoffeeBuilder {
 
     useGlass(glass: TGlass) {
         this.coffee.glass = glass;
+
         return this;
     }
 
     useMilk(milk: TMilk) {
         this.coffee.milk = milk;
+
         return this;
     }
 
     useRecipe(recipe: TRecipe) {
         this.coffee.recipe = recipe;
+
         return this;
     }
 
     addTopping(topping: TTopping) {
         this.coffee.topping = topping;
+
         return this;
     }
 
     addDessert(dessert: TDessert) {
         this.coffee.dessert = dessert;
+
         return this;
     }
 

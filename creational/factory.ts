@@ -14,7 +14,15 @@ class Character {
     agility: TPoints;
     luck: TPoints;
 
-    constructor (strength: TPoints, perception: TPoints, endurance: TPoints, charisma: TPoints, intelligence: TPoints, agility: TPoints, luck: TPoints) {
+    constructor(
+        strength: TPoints,
+        perception: TPoints,
+        endurance: TPoints,
+        charisma: TPoints,
+        intelligence: TPoints,
+        agility: TPoints,
+        luck: TPoints
+    ) {
         this.strength = strength;
         this.perception = perception;
         this.endurance = endurance;
@@ -29,7 +37,7 @@ class CharacterFactory {
     create(character: TCharacterTypes) {
         switch (character) {
             case 'Brawler': return new Character(10, 5, 8, 4, 4, 6, 5);
-            case 'Nomad':  return new Character(6, 10, 9, 6, 6, 7, 6);
+            case 'Nomad': return new Character(6, 10, 9, 6, 6, 7, 6);
             case 'Sniper': return new Character(5, 10, 8, 8, 8, 7, 7);
             case 'Scientist': return new Character(4, 8, 4, 6, 10, 4, 5);
         }
@@ -73,15 +81,10 @@ type TDeliveryOptions = 'Land' | 'Sea';
 class LogisticsFactory {
     deliver(type: TDeliveryOptions) {
         switch (type) {
-            case "Land": return new Truck();
-            case "Sea": return new Boat();
+            case 'Land': return new Truck();
+            case 'Sea': return new Boat();
         }
     }
 }
-
-
-
-
-
 
 
