@@ -1,3 +1,3 @@
-interface grouping related factories.
+Interface grouping related factories.
 
-Subordinate factories must implement the same interface
+> Note: subordinate factories must implement the same interface
