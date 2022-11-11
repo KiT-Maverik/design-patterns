@@ -1,4 +1,4 @@
-Replaces original object and allows to do smth bfore or after it been called
+Proxy provides a substitute or placeholder for another object.
 
 ### Use case
 * Auth
