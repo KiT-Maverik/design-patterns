@@ -3,17 +3,6 @@ interface IState {
     speak: () => void;
 }
 
-class Human implements IState {
-    private state: IState = new Vegan();
-
-    eat() { this.state.eat(); }
-
-    speak() { this.state.speak(); }
-
-    setState(state: IState) { this.state = state; }
-
-}
-
 class Vegan implements IState {
     eat() { console.log('🥑🥕🍌🍏 - Delicious food!'); }
     speak() { console.log('I am vegan!'); }
@@ -27,6 +16,17 @@ class Fatty implements IState {
 class Zombie implements IState {
     eat() { console.log('🧠🧠🧠 - OM-NOM-NOM'); }
     speak() { console.log('Braaainsssss'); }
+}
+
+class Human implements IState {
+    private state: IState = new Vegan();
+
+    eat() { this.state.eat(); }
+
+    speak() { this.state.speak(); }
+
+    setState(state: IState) { this.state = state; }
+
 }
 
 // PROOF OF CONCEPT
