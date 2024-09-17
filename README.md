@@ -1,4 +1,1 @@
-Design patterns are typical solutions to common problems in software design.
-
-Client code is anything calling your code.
-It could be other app calling or just another module of your app.
+A collection that includes various design patterns along with their practical implementations in code. It contains well-documented examples of patterns, demonstrating how to apply them to solve common software design problems. This repository serves as a reference guide for developers, helping them quickly find and understand the appropriate pattern for a given scenario.
